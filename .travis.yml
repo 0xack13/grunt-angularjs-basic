@@ -11,6 +11,10 @@ cache:
   directories:
     - "$HOME/.npm"
 
+before_script:
+  - "npm install -g bower grunt-cli karma"
+  - "bower install"
+
 install:
   - npm install
   - grunt build
